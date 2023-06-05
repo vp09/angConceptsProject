@@ -13,9 +13,10 @@ export class AppService {
     console.log("service is called");
     
     this.employeeList.push(empData);
-    console.log(this.employeeList);
+    // console.log(this.employeeList);
   }
   getEmployee(){
+    console.log(this.employeeList)
     return this.employeeList;
   }
 

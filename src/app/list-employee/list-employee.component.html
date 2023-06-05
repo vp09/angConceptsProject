@@ -1,2 +1,21 @@
-{{Currentemp}}
+{{Currentemp | json}}
 <h1 style="background-color: #5dc95a;">list employee component</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">email</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of Currentemp" (click)="getEmpDetails(e)">
+        <th scope="row">1</th>
+        <td>{{e["name"]}}</td>
+        <td>{{e["email"]}}</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>

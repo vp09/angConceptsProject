@@ -18,7 +18,7 @@ export class AddEmployeeComponent {
     
     this.app.addEmployee(emp.value);
     console.log("navigator method");
-    this.router.navigate(['listEmployee']);
+    // this.router.navigate(['listEmployee']);
     
   }
 }
